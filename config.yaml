@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://github.com/advscf/ccmon' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,25 +15,163 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: www-ninahotelgroup-com
+    name: www.ninahotelgroup.com
+    url: https://www.ninahotelgroup.com/
     method: GET
     expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
-
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: eshop-ninahotelgroup-com
+    name: eshop.ninahotelgroup.com
+    url: https://eshop.ninahotelgroup.com/
+    method: GET
+    expectStatus: 200
+  - id: ninahotelgroup-zeek-store-ru_chinese_restaurant
+    name: ninahotelgroup.zeek.store-ru_chinese_restaurant
+    url: https://ninahotelgroup.zeek.store/ru_chinese_restaurant/
+    method: GET
+    expectStatus: 200
+  - id: ninahotelgroup-zeek-store-cafe_circles
+    name: ninahotelgroup.zeek.store-cafe_circles
+    url: https://ninahotelgroup.zeek.store/cafe_circles/
+    method: GET
+    expectStatus: 200
+  - id: ninahotelgroup-zeek-store-is_cafe
+    name: ninahotelgroup.zeek.store-is_cafe
+    url: https://ninahotelgroup.zeek.store/is_cafe/
+    method: GET
+    expectStatus: 200
+  - id: ninahotelgroup-zeek-store-corner_18
+    name: ninahotelgroup.zeek.store-corner_18
+    url: https://ninahotelgroup.zeek.store/corner_18
+    method: GET
+    expectStatus: 200
+  - id: ninahotelgroup-zeek-store-forte
+    name: ninahotelgroup.zeek.store-forte
+    url: https://ninahotelgroup.zeek.store/forte
+    method: GET
+    expectStatus: 200
+  - id: ninahotelgroup-zeek-store-sichuan_lab
+    name: ninahotelgroup.zeek.store-sichuan_lab
+    url: https://ninahotelgroup.zeek.store/sichuan_lab/
+    method: GET
+    expectStatus: 200
+  - id: ninahotelgroup-zeek-store-canton_pot
+    name: ninahotelgroup.zeek.store-canton_pot
+    url: https://ninahotelgroup.zeek.store/canton_pot
+    method: GET
+    expectStatus: 200
+  - id: www-chinachemgroup-com
+    name: www.chinachemgroup.com
+    url: https://www.chinachemgroup.com
+    method: GET
+    expectStatus: 200
+  - id: www-ninahotelgroup-com
+    name: www.ninahotelgroup.com
+    url: https://www.ninahotelgroup.com
+    method: GET
+    expectStatus: 200
+  - id: www-cel-cinemas-com
+    name: www.cel-cinemas.com
+    url: https://www.cel-cinemas.com
+    method: GET
+    expectStatus: 200
+  - id: chinachemcentral-com-hk
+    name: chinachemcentral.com.hk
+    url: https://chinachemcentral.com.hk
+    method: GET
+    expectStatus: 200
+  - id: www-ninamall-com-hk
+    name: www.ninamall.com.hk
+    url: https://www.ninamall.com.hk
+    method: GET
+    expectStatus: 200
+  - id: www-bisneycrest-com-hk
+    name: www.bisneycrest.com.hk
+    url: https://www.bisneycrest.com.hk
+    method: GET
+    expectStatus: 200
+  - id: www-edengate-com-hk
+    name: www.edengate.com.hk
+    url: https://www.edengate.com.hk
+    method: GET
+    expectStatus: 200
+  - id: www-jadegrove-com-hk
+    name: www.jadegrove.com.hk
+    url: https://www.jadegrove.com.hk
+    method: GET
+    expectStatus: 200
+  - id: www-parcinverness-com-hk
+    name: www.parcinverness.com.hk
+    url: https://www.parcinverness.com.hk
+    method: GET
+    expectStatus: 200
+  - id: www-serenitypoint-com-hk
+    name: www.serenitypoint.com.hk
+    url: https://www.serenitypoint.com.hk
+    method: GET
+    expectStatus: 200
+  - id: www-solcity-com-hk
+    name: www.solcity.com.hk
+    url: https://www.solcity.com.hk
+    method: GET
+    expectStatus: 200
+  - id: www-theredhillpeninsula-com-hk
+    name: www.theredhillpeninsula.com.hk
+    url: https://www.theredhillpeninsula.com.hk
+    method: GET
+    expectStatus: 200
+  - id: www-villacove-com-hk
+    name: www.villacove.com.hk
+    url: https://www.villacove.com.hk
+    method: GET
+    expectStatus: 200
+  - id: www-papillonssquare-com-hk
+    name: www.papillonssquare.com.hk
+    url: https://www.papillonssquare.com.hk
+    method: GET
+    expectStatus: 200
+  - id: mountanderson-com-hk
+    name: mountanderson.com.hk
+    url: https://mountanderson.com.hk
+    method: GET
+    expectStatus: 200
+  - id: www-universityheights-com-hk
+    name: www.universityheights.com.hk
+    url: https://www.universityheights.com.hk
+    method: GET
+    expectStatus: 200
+  - id: thelily-hk
+    name: thelily.hk
+    url: https://thelily.hk
+    method: GET
+    expectStatus: 200
+  - id: luckydraw-chinachemgroup-com
+    name: luckydraw.chinachemgroup.com
+    url: https://luckydraw.chinachemgroup.com
+    method: GET
+    expectStatus: 200
+  - id: ccg60exhibition-com
+    name: ccg60exhibition.com
+    url: https://ccg60exhibition.com
+    method: GET
+    expectStatus: 200
+  - id: ccg60-hk 
+    name: ccg60.hk 
+    url: https://ccg60.hk 
+    method: GET
+    expectStatus: 200
+  - id: chinachemmysweethome-com
+    name: chinachemmysweethome.com
+    url: https://chinachemmysweethome.com
+    method: GET
+    expectStatus: 200
+  - id: chinachemclub-net
+    name: chinachemclub.net
+    url: https://chinachemclub.net
+    method: GET
+    expectStatus: 200
+  - id: www-centralmarket-hk
+    name: www.centralmarket.hk
+    url: https://www.centralmarket.hk
     method: GET
     expectStatus: 200
