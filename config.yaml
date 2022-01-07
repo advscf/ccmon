@@ -183,7 +183,6 @@ monitors:
     expectStatus: 200
   - id: www-centralmarket-hk
     name: www.centralmarket.hk
-    url: https://www.centralmarket.hk
+    url: https://www.centralmarket.hk/
     method: GET
-    followRedirect: true
     expectStatus: 200
